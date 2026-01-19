@@ -4,6 +4,7 @@
  * ***************************************************/
 
 'use strict';
+console.log("Hello World");
 
 var fs = require('fs');
 var express = require('express');
@@ -21,7 +22,7 @@ if (!process.env.DISABLE_XORIGIN) {
     next();
   });
 }
-console.log("Hello World");
+
 app.use('/public', express.static(process.cwd() + '/public'));
 
 app.route('/_api/package.json')
@@ -60,4 +61,4 @@ const listener = app.listen(PORT, () => {
   console.log(`Node.js listening on port ${PORT}`);
 });
 
-
+//4bc99c6d1f4913bd692cda220136a885
