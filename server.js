@@ -22,6 +22,7 @@ if (!process.env.DISABLE_XORIGIN) {
     next();
   });
 }
+console.log("🔥 Hello World from Render 🔥");
 
 app.use('/public', express.static(process.cwd() + '/public'));
 
